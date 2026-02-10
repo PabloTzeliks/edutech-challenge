@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTech Academy</title>
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        page: {
+                            light: '#F9F9F9',
+                            dark: '#1E1E1E',
+                        },
+                        txt: {
+                            light: '#1E1E1E',
+                            dark: '#F9F9F9',
+                        },
+                        primary: {
+                            light: '#0077CC',
+                            dark: '#4DA6FF',
+                            hover: '#005FA3',
+                            hoverDark: '#66BFFF'
+                        },
+                        card: {
+                            light: '#FFFFFF',
+                            dark: '#2C2C2C',
+                        },
+                        border: {
+                            light: '#E0E0E0',
+                            dark: '#444444',    
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="">
+        <div class="">
+            <div >
+                <img src="resources/images_prova/logo.svg" alt="Logo EduTech Academy">
+                <p id="">EduTech Academy</p>
+            </div>
+
+            <div ><img src="resources/images_prova/menu.svg" alt="Menu"></div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#matricula">Matricula</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+            </nav>
+
+            <button id="toggle-button"><img src="resources/images_prova/moon.svg" alt="Trocar para Modo Noturno"></button>
+        </div>
+    </header>
+
+</body>
+</html>
