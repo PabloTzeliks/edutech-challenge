@@ -51,17 +51,17 @@
         }
     </script>
 </head>
-<body class="bg-page-light dark:bg-page-dark">
-    <header class="">
-        <div class="">
-            <div >
-                <img src="resources/images_prova/logo.svg" alt="Logo EduTech Academy">
-                <p id="">EduTech Academy</p>
+<body class="bg-page-light dark:bg-page-dark text-txt-light dark:text-txt-dark font-sans">
+    <header class="bg-card-light dark:bg-card-dark shadow-md sticky top-0 z-50 transition-colors duration-300">
+        <div class="container mx-auto px-4 flex justify-between items-center py-4">
+            <div class="flex items-center gap-2">
+                <img class="h-8 w-auto" src="resources/images_prova/logo.svg" alt="Logo EduTech Academy">
+                <p class="font-heading font-bold text-primary-light dark:text-primary-dark text-xl">EduTech Academy</p>
             </div>
 
-            <div ><img src="resources/images_prova/menu.svg" alt="Menu"></div>
+            <div id="mobile-menu-btn" class="block md:hidden cursor-pointer"><img src="resources/images_prova/menu.svg" alt="Menu" class="h-6 w-6 dark:invert"></div>
 
-            <nav>
+            <nav class="hidden">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#cursos">Cursos</a></li>
@@ -70,7 +70,20 @@
                 </ul>
             </nav>
 
-            <button id="toggle-button"><img src="resources/images_prova/moon.svg" alt="Trocar para Modo Noturno"></button>
+            <button id="toggle-button" class="hidden"><img src="resources/images_prova/moon.svg" alt="Modo Noturno"></button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-card-light dark: bg-card-dark border-t border-border-light dark:border-border-dark p-4">
+            <ul class="flex flex-col gap-4 font-medium">
+                <li><a href="index.html" class="block py-2">Home</a></li>
+                <li><a href="#cursos" class="block py-2">Cursos</a></li>
+                <li><a href="#matricula" class="block py-2">Matrícula</a></li>
+                <li><a href="#sobre" class="block py-2">Sobre</a></li>
+                <li class="pt-2 border-t border-border-light dark:border-border-dark flex justify-between items-center">
+                    <span>Modo Escuro</span>
+                    <button id="toggle-button-mobile" class="p-2"><img src="resources/images_prova/moon.svg" alt="Modo Noturno" class="h-6 w-6 dark:invert"></button>
+                </li>
+            </ul>
         </div>
     </header>
 
