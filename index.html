@@ -61,17 +61,17 @@
 
             <div id="mobile-menu-btn" class="block md:hidden cursor-pointer"><img src="resources/images_prova/menu.svg" alt="Menu" class="h-6 w-6"></div>
 
-            <nav class="hidden">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#cursos">Cursos</a></li>
-                    <li><a href="#matricula">Matricula</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
+            <nav class="hidden md:flex md:items-center md:gap-6">
+                <ul class="flex gap-6 font-medium">
+                    <li><a href="index.html" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors">Home</a></li>
+                    <li><a href="#cursos" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors">Cursos</a></li>
+                    <li><a href="#matricula" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors">Matricula</a></li>
+                    <li><a href="#sobre" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors">Sobre</a></li>
                 </ul>
 
                 <button id="theme-toggle-button-desktop" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
                     <img src="resources/images_prova/moon.svg" alt="Modo Noturno" class="h-6 w-6 block dark:hidden">
-                    <img src="resources/images_prova/sun.svg" alt="Modo Noturno" class="h-6 w-6 hidden dark:block dark:invert">
+                    <img src="resources/images_prova/sun.svg" alt="Modo Noturno" class="h-6 w-6 hidden dark:block">
                 </button>
             </nav>
         </div>
@@ -93,6 +93,18 @@
             </ul>
         </div>
     </header>
+
+    <main>
+        <section class="py-12 md:py-24 bg-page-light dark:bg-page-dark transition-colors duration-300">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="font-heading font-bold text-txt-light dark:text-txt-dark text-[2rem] md:text-5xl mb-4">
+                    Construa seu Futuro com a EduTech Academy
+                </h1>
+
+                <p class="text-gray-600 dark:text-gray-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">Cursos de alta qualidade para impulsionar sua carreira e transformar sua vida profissional</p>
+            </div>
+        </section>
+    </main>
 
     <script src="logic/script.js"></script>
 </body>
